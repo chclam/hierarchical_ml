@@ -6,7 +6,7 @@ from datetime import datetime
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
-from hierarchical.metrics import hierarchical_precision_score, hierarchical_recall_score, hierarchical_f1_score
+from ml_utils.hierarchical.metrics import hierarchical_precision_score, hierarchical_recall_score, hierarchical_f1_score
 
 class MLExperiment:
   def __init__(self, pipeline: Pipeline, predict_level: int, sample_weight_col_name: str) -> None:
